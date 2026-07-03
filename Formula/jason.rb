@@ -9,7 +9,7 @@ class Jason < Formula
 
   def install
     libexec.install Dir["*"]
-    (bin/"jason").write_env_script libexec/"bin/jason", Language::Java.overridable_java_home_env
+    (bin/"jason").write_env_script libexec/"bin/jason", Language::Java.overridable_java_home_env("21")
   end
 
   test do
