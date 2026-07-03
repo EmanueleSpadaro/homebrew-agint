@@ -27,6 +27,10 @@ brew install jade    # or jason
 - macOS or Linux
 - Java 21+ (automatically installed by Homebrew)
 
+### Development
+
+Development tooling is managed via [mise](https://mise.jdx.dev) — see [`.mise.toml`](.mise.toml).
+
 ---
 
 ## JADE
