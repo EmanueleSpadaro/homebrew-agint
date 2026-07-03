@@ -9,10 +9,7 @@ class Jason < Formula
 
   def install
     libexec.install Dir["*"]
-    (bin/"jason").write_env_script libexec/"bin/jason",
-      Language::Java.overridable_java_home_env("21").merge(
-        "PATH" => "#{Formula["openjdk@21"].opt_bin}:#{ENV.fetch("PATH", "")}"
-      )
+    (bin/"jason").write_env_script libexec/"bin/jason", Language::Java.overridable_java_home_env("21")
   end
 
   test do
