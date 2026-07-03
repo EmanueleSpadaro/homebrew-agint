@@ -27,14 +27,91 @@ brew install jade    # or jason
 - macOS or Linux
 - Java 21+ (automatically installed by Homebrew)
 
-## Usage
+---
+
+## JADE
+
+Java Agent DEvelopment Framework — a framework to develop multi-agent systems in compliance with the FIPA specifications.
+
+### Usage
 
 ```bash
 jade -help
-jason --version
+jade -gui
 ```
 
-Examples for each tool are in the `examples/` directory.
+### Example
+
+A minimal two-agent interaction is available in `examples/jade/`:
+
+```bash
+cd examples/jade
+chmod +x run.sh
+./run.sh
+```
+
+This starts a `ReceiverAgent` (waits for messages) and a `SenderAgent` (sends a message and waits for a reply), demonstrating `ACLMessage`, `CyclicBehaviour`, `OneShotBehaviour`, and blocking receive — the core mechanics of JADE agent communication.
+
+### Editor Setup
+
+For autocompletion and type checking on JADE classes, configure your editor's Java language server to include the JADE JAR.
+
+#### Zed
+
+Open the `examples/jade/` directory in Zed — everything is already configured:
+
+- [`.zed/settings.json`](./examples/jade/.zed/settings.json) — JDT LS configuration
+- [`.project`](./examples/jade/.project) and [`.classpath`](./examples/jade/.classpath) — Eclipse project metadata
+
+JADE imports will resolve automatically.
+
+#### VS Code
+
+Create `examples/jade/.vscode/settings.json`:
+
+```json
+{
+  "java.project.referencedLibraries": [
+    "/opt/homebrew/opt/jade/libexec/jade/lib/jade.jar"
+  ]
+}
+```
+
+#### Other editors
+
+Set your project classpath to:
+
+```
+$(brew --prefix jade)/libexec/jade/lib/jade.jar
+```
+
+---
+
+## Jason
+
+Java-based interpreter for an extended version of AgentSpeak.
+
+### Usage
+
+```bash
+jason --version
+jason my_agent.mas2j
+```
+
+### Examples
+
+Run the hello world example to verify your installation:
+
+```bash
+cd examples/jason
+jason hello.mas2j
+```
+
+---
+
+## Attribution
+
+Homebrew formulae to install JADE and Jason CLI. Created for the ["Agenti Intelligenti"](https://magistrale.informatica.unito.it/do/corsi.pl/Show?_id=85mm) course (Prof. Baldoni) — MSc Computer Science, Università di Torino.
 
 ## License
 
