@@ -1,0 +1,19 @@
+{
+  "lsp": {
+    "jdtls": {
+      "settings": {
+        "initialization_options": {
+          "settings": {
+            "java": {
+              "project": {
+                "referencedLibraries": [
+                  "/opt/homebrew/opt/jade/libexec/jade/lib/jade.jar"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

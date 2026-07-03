@@ -1,0 +1,4 @@
+MAS hello {
+    environment: HelloEnv
+    agents: hello_world;
+}
