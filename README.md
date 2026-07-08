@@ -1,4 +1,4 @@
-# homebrew-taps
+# homebrew-agint
 
 Homebrew tap for agent-oriented programming tools.
 
@@ -12,14 +12,14 @@ Homebrew tap for agent-oriented programming tools.
 ## Install
 
 ```bash
-brew tap EmanueleSpadaro/taps
+brew tap EmanueleSpadaro/agint
 brew install jade    # or jason
 ```
 
-> **Note**: If you were using the old individual taps (`EmanueleSpadaro/jade` or `EmanueleSpadaro/jason`), migrate by running:
+> **Note**: If you were using the old tap name (`EmanueleSpadaro/taps`), migrate by running:
 > ```bash
-> brew untap EmanueleSpadaro/jade EmanueleSpadaro/jason
-> brew tap EmanueleSpadaro/taps
+> brew untap EmanueleSpadaro/taps
+> brew tap EmanueleSpadaro/agint
 > ```
 
 ## Requirements
