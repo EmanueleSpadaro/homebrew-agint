@@ -1,7 +1,7 @@
 class Jade < Formula
   desc "Java Agent DEvelopment Framework"
   homepage "https://jade.tilab.com/"
-  url "https://github.com/EmanueleSpadaro/homebrew-jade/releases/download/v4.6.0/JADE-bin-4.6.0.zip"
+  url "https://github.com/EmanueleSpadaro/homebrew-agint/releases/download/v4.6.0/JADE-bin-4.6.0.zip"
   sha256 "9d2c088bd3d9d97e8861e0fd52a2dc13740b0d532721b518c4eabdf80eba3d74"
   license "LGPL-2.1-only"
 
