@@ -37,6 +37,8 @@ Development tooling is managed via [mise](https://mise.jdx.dev) — see [`.mise.
 
 Java Agent DEvelopment Framework — a framework to develop multi-agent systems in compliance with the FIPA specifications.
 
+> **Note on distribution**: JADE is downloaded from this repository's GitHub release because the official site (jade.tilab.com) requires accepting a license agreement via interactive page and has certificate issues — preventing Homebrew from fetching directly. The binary is the unmodified official JADE 4.6.0 release, redistributed under LGPL 2.1.
+
 ### Usage
 
 ```bash
